@@ -1,0 +1,32 @@
+{
+  "name": "x86-osx-native",
+  "version": "0.0.7",
+  "similarTo": [
+    "osx",
+    "native",
+    "userland",
+    "x86-64",
+    "x86"
+  ],
+  "toolchain": "CMake/toolchain.cmake",
+  "description": "Build target for programs compiled natively for OS X",
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/Apache-2.0",
+      "type": "Apache-2.0"
+    }
+  ],
+  "debug": [
+    "lldb",
+    "$program"
+  ],
+  "scripts": {
+    "debug": [
+      "lldb",
+      "$program"
+    ],
+    "test": [
+      "$program"
+    ]
+  }
+}
