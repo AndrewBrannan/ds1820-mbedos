@@ -19,7 +19,7 @@ void app_start(int, char *[]) {
             break;
     }
     
-    printf("Found %d device(s)\r\n\n", num_devices);
+    printf("Found temperature probe\r\n\n");
     while(1) {
         probe[0]->convertTemperature(true, DS1820::all_devices);         //Start temperature conversion, wait until ready
         for (int i = 0; i<num_devices; i++)
