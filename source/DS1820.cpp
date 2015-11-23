@@ -351,7 +351,7 @@ float DS1820::temperature(char scale) {
 // deg C or F scales.
     float answer, remaining_count, count_per_degree;
     int reading;
-    read_RAM();x
+    read_RAM();
     if (RAM_checksum_error())
         // Indicate we got a CRC error
         answer = invalid_conversion;
